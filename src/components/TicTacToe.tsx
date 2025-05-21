@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { GameBoard } from "./GameBoard";
 import { SelectPlayer } from "./SelectPlayer";
+import { DisplayText } from "./DisplayText";
 
 export const TicTacToe = () => {
 
@@ -59,9 +60,7 @@ export const TicTacToe = () => {
  
     return (
         <div>
-          {winner ? ( <h2>Winner: {winner}</h2>) : isDrawMatch ? (
-            <h2>Draw Match</h2>
-          ) : (<h2>Player: {currentPlayer}</h2>)}
+          <DisplayText winner={winner} isDrawMatch={isDrawMatch} currentPlayer={currentPlayer}/>
           <GameBoard onClick={handleClick} value={value} />
           <SelectPlayer setCurrentPlayer={setCurrentPlayer}/>
           <button type="button" onClick={handleNewGame}>Start New Game</button>
