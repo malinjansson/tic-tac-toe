@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { TicTacToe } from './components/TicTacToe'
 
 function App() {
