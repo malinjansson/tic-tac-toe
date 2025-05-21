@@ -3,10 +3,10 @@ type squareProps={
     onClick: ()=>void
 }
 
-export const SquareBtn = ({onClick, value}: squareProps) => {
+export const SquareBtn = (props: squareProps) => {
     return (
-        <button type='button' onClick={onClick}>
-            {value}
+        <button type='button' onClick={props.onClick}>
+            {props.value}
         </button>
     )
 }

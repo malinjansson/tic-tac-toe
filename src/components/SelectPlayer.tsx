@@ -2,13 +2,13 @@ type selectPlayerProps={
     setCurrentPlayer: (value:string) => void;
 }
 
-export const SelectPlayer = ({ setCurrentPlayer }: selectPlayerProps) => {
+export const SelectPlayer = (props: selectPlayerProps) => {
     const handleX = () => {
-      setCurrentPlayer("X");
+      props.setCurrentPlayer("X");
     };
   
     const handleO = () => {
-      setCurrentPlayer("O");
+      props.setCurrentPlayer("O");
     };
   
     return (
