@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+
+.tictactoe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top-heading {
+        font-family: "Coiny", system-ui;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    
+    .game-board {
+        padding: 1px;
+        background-color: rgb(103, 71, 145);
+        border-radius: 20px;
+        width: 80%;
+    
+        .game-row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: 10px;
+            gap: 10px;
+    
+            .square-btn {
+                display: inline-flex;
+                height: 10vh;
+                width: auto;
+                align-items: center;
+                justify-content: center;
+
+                .value {
+                    min-width: 1em;
+                    display: inline-block;
+                    font-size: 30px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    
+    .select-player {
+        padding-bottom: 10px;
+    
+       .player-btn {
+        font-size: 14px;
+        height: 100%;
+        width: auto;
+        margin: 5px;
+       }
+    }
+}

@@ -12,10 +12,10 @@ export const SelectPlayer = (props: selectPlayerProps) => {
     };
   
     return (
-      <div>
-        <h3>Select player</h3>
-        <button type="button" onClick={handleX}>X</button>
-        <button type="button" onClick={handleO}>O</button>
+      <div className="select-player">
+        <h2>Select player</h2>
+        <button type="button" className="player-btn" onClick={handleX}>X</button>
+        <button type="button" className="player-btn" onClick={handleO}>O</button>
       </div>
     );
   };
