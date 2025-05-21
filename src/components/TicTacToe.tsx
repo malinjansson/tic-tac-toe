@@ -60,10 +60,11 @@ export const TicTacToe = () => {
  
     return (
         <div>
-          <DisplayText winner={winner} isDrawMatch={isDrawMatch} currentPlayer={currentPlayer}/>
-          <GameBoard onClick={handleClick} value={value} />
-          <SelectPlayer setCurrentPlayer={setCurrentPlayer}/>
-          <button type="button" onClick={handleNewGame}>Start New Game</button>
+            <h1>Let's play TicTacToe!</h1>
+            <SelectPlayer setCurrentPlayer={setCurrentPlayer}/>
+            <GameBoard onClick={handleClick} value={value} />
+            <DisplayText winner={winner} isDrawMatch={isDrawMatch} currentPlayer={currentPlayer}/>
+            <button type="button" onClick={handleNewGame}>Start New Game</button>
         </div>
       );
 }
